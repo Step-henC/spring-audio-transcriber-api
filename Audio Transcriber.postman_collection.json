@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "014f0aa7-69aa-492b-8f89-469ad9108254",
+		"name": "Audio Transcriber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32327161"
+	},
+	"item": [
+		{
+			"name": "Transcribe Audio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/steve/dev/ttsMP3.com_VoiceText_2024-12-30_13-59-45.mp3"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/transcribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"transcribe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
